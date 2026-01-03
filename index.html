@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Daily Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mode-toggle">
+  <button onclick="toggleMode()">🌙</button>
+</div>
+
+<div class="container">
+<h1>📅 Smart Daily Planner</h1>
+
+<div class="input-box">
+  <input type="text" id="taskInput" placeholder="Task name">
+  <input type="time" id="timeInput">
+  <select id="priorityInput">
+    <option value="High">🔥 High</option>
+    <option value="Medium">⚡ Medium</option>
+    <option value="Low">🌿 Low</option>
+  </select>
+  <button onclick="addTask()">Add</button>
+</div>
+
+<ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
